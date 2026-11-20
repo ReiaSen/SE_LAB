@@ -1,0 +1,48 @@
+Python 3.13.13
+pytest 9.1.1
+Coverage.py, version 7.16.0 with C extension
+Full documentation is at https://coverage.readthedocs.io/en/7.16.0
+============================= test session starts ==============================
+platform darwin -- Python 3.13.13, pytest-9.1.1, pluggy-1.6.0 -- /Users/reias/miniforge3/bin/python3
+cachedir: .pytest_cache
+rootdir: /private/tmp/reia_lab6/LAB6
+plugins: cov-7.1.0, anyio-4.15.1
+collecting ... collected 29 items
+
+test_marathon_registration.py::test_10k_standard PASSED                  [  3%]
+test_marathon_registration.py::test_first_timer_wave PASSED              [  6%]
+test_marathon_registration.py::test_entry_fee_rejects_ineligible_registration[ultra-30-unknown race] PASSED [ 10%]
+test_marathon_registration.py::test_entry_fee_rejects_ineligible_registration[5k-11-too young] PASSED [ 13%]
+test_marathon_registration.py::test_entry_fee_rejects_ineligible_registration[half-17-too young for this distance] PASSED [ 17%]
+test_marathon_registration.py::test_entry_fee_rejects_ineligible_registration[full-17-too young for this distance] PASSED [ 20%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[5k-12-False-False-500] PASSED [ 24%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[half-18-False-False-1200] PASSED [ 27%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[full-18-False-False-1800] PASSED [ 31%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[10k-64-False-False-800] PASSED [ 34%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[10k-65-False-False-400] PASSED [ 37%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[half-30-True-False-900] PASSED [ 41%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[5k-30-False-True-800] PASSED [ 44%]
+test_marathon_registration.py::test_entry_fee_prices_and_adjustments[5k-65-True-True-487] PASSED [ 48%]
+test_marathon_registration.py::test_start_wave_boundaries[full-180-A] PASSED [ 51%]
+test_marathon_registration.py::test_start_wave_boundaries[full-181-B] PASSED [ 55%]
+test_marathon_registration.py::test_start_wave_boundaries[full-240-B] PASSED [ 58%]
+test_marathon_registration.py::test_start_wave_boundaries[full-241-C] PASSED [ 62%]
+test_marathon_registration.py::test_start_wave_boundaries[half-90-A] PASSED [ 65%]
+test_marathon_registration.py::test_start_wave_boundaries[half-91-B] PASSED [ 68%]
+test_marathon_registration.py::test_start_wave_boundaries[half-120-B] PASSED [ 72%]
+test_marathon_registration.py::test_start_wave_boundaries[half-121-C] PASSED [ 75%]
+test_marathon_registration.py::test_finisher_status_time_limits[full-360-finisher] PASSED [ 79%]
+test_marathon_registration.py::test_finisher_status_time_limits[full-361-DNF] PASSED [ 82%]
+test_marathon_registration.py::test_finisher_status_time_limits[half-180-finisher] PASSED [ 86%]
+test_marathon_registration.py::test_finisher_status_time_limits[half-181-DNF] PASSED [ 89%]
+test_marathon_registration.py::test_finisher_status_time_limits[10k-90-finisher] PASSED [ 93%]
+test_marathon_registration.py::test_finisher_status_time_limits[10k-91-DNF] PASSED [ 96%]
+test_marathon_registration.py::test_missed_checkpoint_overrides_valid_finishing_time PASSED [100%]
+
+============================== 29 passed in 0.08s ==============================
+Name                       Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------
+marathon_registration.py      38      0     28      0   100%
+----------------------------------------------------------------------
+TOTAL                         38      0     28      0   100%
+Wrote JSON report to coverage.json
